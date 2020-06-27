@@ -4,7 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Ui.Home">
+    tools:context=".Ui.Home"
+
+
+    >
 
 
     <RelativeLayout
@@ -14,8 +17,9 @@
         android:layout_alignParentTop="true">
 
         <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:id="@+id/sideBarHome"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
@@ -24,8 +28,9 @@
 
 
         <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:id="@+id/notificationHome"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_marginLeft="20dp"
@@ -36,6 +41,7 @@
             android:src="@drawable/ic_baseline_notifications_24" />
 
         <TextView
+            android:id="@+id/titleHome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
@@ -49,6 +55,7 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/footerHome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -57,15 +64,15 @@
 
         <ImageView
             android:id="@+id/homeHome"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:layout_marginLeft="20dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
-            android:src="@drawable/ic_outline_home_24"
+            android:src="@drawable/ic_round_home_24"
             />
         <RelativeLayout
             android:layout_width="match_parent"
@@ -75,9 +82,9 @@
 
             >
             <ImageView
-               android:id="@+id/center"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+               android:id="@+id/WebsiteHome"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
                 android:layout_marginStart="20dp"
@@ -88,25 +95,26 @@
                 />
 
             <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:layout_centerInParent="true"
-
-                android:src="@drawable/ic_baseline_people_outline_24"
+                android:id="@+id/aboutUsHome"
+                android:src="@drawable/ic_outline_people_24"
 
 
                 />
 
             <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:id="@+id/contactUsHome"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
                 android:layout_marginEnd="20dp"
                 android:layout_alignParentEnd="true"
                 android:layout_marginRight="20dp"
                 android:layout_alignParentRight="true"
-                android:src="@drawable/ic_outline_call_24"
+                android:src="@drawable/ic_baseline_call_24"
                 />
 
 
@@ -115,8 +123,9 @@
 
 
         <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:id="@+id/logOutHome"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_marginEnd="20dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
@@ -128,6 +137,15 @@
             />
 
     </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/homeFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_bar_home"
+        android:layout_above="@+id/footerHome"
+
+        />
 
 
 </RelativeLayout>
