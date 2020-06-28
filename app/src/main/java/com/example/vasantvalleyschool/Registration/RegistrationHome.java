@@ -13,4 +13,4 @@ public class RegistrationHome extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration_home);
     }
-}
+}//yeh khali he boss

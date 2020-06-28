@@ -15,7 +15,6 @@
         android:id="@+id/imageView"
         android:layout_width="100dp"
         android:layout_height="100dp"
-
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:src="@drawable/logo" />
@@ -43,7 +42,6 @@
         android:layout_marginTop="5dp"
         android:text="Please sign in to continue"
         android:textColor="@android:color/black"
-
         android:textSize="22sp" />
 
     <RelativeLayout
@@ -52,8 +50,6 @@
         android:layout_below="@id/textLogIn"
         android:layout_centerInParent="true"
         android:layout_marginTop="70dp"
-
-
         >
 
         <EditText
